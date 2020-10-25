@@ -1,8 +1,9 @@
 import express from 'express';
-const app = express();
+import './database/connection';
+import routes from './routes';
 
-app.get('/', (req, res) => {
-    res.send({ message: 'Helow'})
-})
+const app = express();
+app.use(express.json());
+app.use(routes);
 
 app.listen(3333);

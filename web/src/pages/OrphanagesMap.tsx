@@ -33,7 +33,7 @@ function OrphanagesMap() {
             <Map center={[-23.5683422, -46.7206263]} zoom={15} style={{ width: '100%', height: '100%' }}>
                 {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
                 <TileLayer
-                    url='http://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicGF0cmljaWFmZWxpeHgiLCJhIjoiY2tnbng3amF0MDZpMDJ6bzhkd2RlYXIwaCJ9.EbN3b2FZT2gpt6I4R9lnZQ'
+                    url={`http://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
                 />
 
                 <Marker
@@ -42,7 +42,7 @@ function OrphanagesMap() {
                 >
                     <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
                         Lar das Meninas
-                        <Link to="#">
+                        <Link to="/orphanages/1">
                             <FiArrowRight size={20} color="#fff" />
                         </Link>
                     </Popup>
@@ -50,7 +50,7 @@ function OrphanagesMap() {
             </Map>
 
             <div>
-                <Link to="#" className="create-orphanage">
+                <Link to="/orphanages/create" className="create-orphanage">
                     <FiPlus size={32} color="#fff" />
                 </Link>
             </div>

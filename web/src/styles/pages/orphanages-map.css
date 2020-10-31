@@ -5,9 +5,9 @@
     display: flex;
 }
 
-aside {
+#page-map aside {
     background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);    
-    width: 440px;
+    width: 460px;
     padding: 80px;
     
     display: flex;
@@ -15,36 +15,36 @@ aside {
     justify-content: space-between;
 }
 
-aside h2 {
+#page-map aside h2 {
     font-size: 40px;
     font-weight: 800;
     line-height: 42px;
     margin-top: 64px;
 }
 
-aside p {
+#page-map aside p {
     line-height: 28px;
     margin-top: 24px;
     font-size: 20px;
 }
 
 
-aside footer {
+#page-map aside footer {
     display: flex;
     flex-direction: column;
     line-height: 24px;
     
 }
 
-aside footer strong {
+#page-map aside footer strong {
     font-weight: 800;
 }
 
-.leaflet-container {
+#page-map .leaflet-container {
     z-index: 5;
 }
 
-div .create-orphanage {
+#page-map div .create-orphanage {
     position: absolute;
     right: 40px;
     bottom: 40px;
@@ -62,17 +62,17 @@ div .create-orphanage {
     transition: background-color 0.2s;
 }
 
-div .create-orphanage:hover {
+#page-map div .create-orphanage:hover {
     background:#17d6eb;    
 }
 
-.map-popup .leaflet-popup-content-wrapper {
+#page-map .map-popup .leaflet-popup-content-wrapper {
     background: rgba(255, 255, 255, 0.8);    
     box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
     border-radius: 20px;
 }
 
-.map-popup .leaflet-popup-content {
+#page-map .map-popup .leaflet-popup-content {
     color: #0089a5;
     font-size: 20px;
     font-weight: 700;
@@ -83,7 +83,7 @@ div .create-orphanage:hover {
     align-items: center;
 }
 
-.map-popup .leaflet-popup-content a {
+#page-map .map-popup .leaflet-popup-content a {
     width: 40px;
     height: 40px;
     background: #15c3d6;
@@ -95,6 +95,6 @@ div .create-orphanage:hover {
     align-items: center;
 }
 
-.map-popup .leaflet-popup-tip-container {
+#page-map .map-popup .leaflet-popup-tip-container {
     display: none;
 }

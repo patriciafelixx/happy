@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.content-wrapper {
+#page-landing .content-wrapper {
     position: relative;
     background: url('../../images/landing.svg') no-repeat 80% center ;
 
@@ -23,23 +23,23 @@
     justify-content: space-between;
 }
 
-main {
+#page-landing main {
     max-width: 350px;
 }
 
-main h1 {
+#page-landing main h1 {
     font-size: 76px;    
     font-weight: 900;
     line-height: 70px;
 }
 
-main p {
+#page-landing main p {
     margin-top: 40px;
     font-size: 24px;
     line-height: 34px;
 }
 
-.location {
+#page-landing .location {
     position: absolute;
     right: 0;
     top: 0;
@@ -52,11 +52,11 @@ main p {
     text-align: right;
 }
 
-.location strong {
+#page-landing .location strong {
     font-weight: 800;
 }
 
-.enter-app {
+#page-landing .enter-app {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -74,7 +74,7 @@ main p {
     transition: background-color 0.2s;
 }
 
-.enter-app:hover {
+#page-landing .enter-app:hover {
     background: #96FEFF;
     color: #15C3D6;
 }

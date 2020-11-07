@@ -38,7 +38,7 @@ const OrphanagesController = {
             about,
             instructions,
             opening_hours,
-            open_on_weekends,
+            open_on_weekends: open_on_weekends == 'true',
             images
         }
 
